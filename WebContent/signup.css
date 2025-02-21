@@ -1,0 +1,79 @@
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2016/10/10/14/44/train-1728537_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+  z-index: 1;
+}
+
+.form-container {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  background-color: rgba(213, 201, 243, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(220, 178, 178);
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Expand the input fields */
+input[type="text"], input[type="password"],input[type="email"] {
+  width:300px;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+label {
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: medium;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(19, 205, 183);
+}
+
+a {
+  color: red;
+}
+
+table {
+  width: 100%; /* Set width to 100% for better alignment */
+  border-spacing: 0 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,128 @@
+body{
+ background-image: url(https://cdn.pixabay.com/photo/2016/10/10/14/44/train-1728537_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:0px;
+  height:100vh;
+  position:relative;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ background-color: rgba(0, 0, 0, 0.7); /* Transparent black overlay */
+  z-index: 1;
+}
+
+  
+.navbar{
+  margin:0;
+  z-index:2;
+  display:flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+  background-color:lightslategrey;
+  padding:10px 20px;
+  position:fixed;
+  width:100%;
+  height:50px;
+  box-sizing: border-box;
+  top:0;
+  left:0;
+  right:0;
+  list-style-type:none; 
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size:20px;
+  color:white;
+  font-weight: bold;
+}
+
+
+.navbar li{
+  margin-left:20px;
+  padding:0;
+
+}
+
+.form-container{
+ z-index:2 ;
+ width:400px;
+ justify-content: center;
+ align-items: center;
+ border:2px solid rgb(151, 93, 202);
+ padding:30px;
+ align-items: center;
+ background-color:rgba(207, 222, 243,0.6);
+ box-shadow:-20px 0 50px -5px rgba(36, 34, 34, 0.9);
+ border-radius: 20px;
+}
+
+table{
+  width: 100%;
+  border-spacing: 0 12px;
+ 
+}
+
+.form{
+  width:100%;
+  padding:20px;
+  border-collapse: collapse;
+}
+
+input[type="text"],
+input[type="date"]{
+  width:220px;
+  padding:10px;
+  font-size: 16px;
+  
+}
+
+input[type="submit"]{
+  width:220px;
+  padding:20px;
+  margin-top:20px;
+  justify-content: center;
+  cursor:pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+  font-size:20px;
+  background-color: forestgreen;
+  border:none;
+  border-radius:5px;
+  color:white;
+}
+
+label{
+  font-size: 26px;
+}
+
+.navbar a:hover{
+  text-decoration:underline;
+  color:crimson;
+}
+
+input[type="button"]:hover{
+  background-color:hotpink;
+}

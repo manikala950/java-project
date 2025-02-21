@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        body {
+            background-image: url('https://cdn.pixabay.com/photo/2016/10/10/14/44/train-1728537_1280.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            height: 100vh;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .form-container {
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            background-color: rgba(213, 201, 243, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid rgb(220, 178, 178);
+        }
+        table {
+            width: 100%;
+            border-spacing: 10px;
+        }
+        label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        input[type="submit"], input[type="button"] {
+            width: 100px;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: medium;
+            border: none;
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+        }
+        input[type="button"] {
+            background-color: #007bff;
+        }
+        input[type="submit"]:hover, input[type="button"]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="test1" method="POST">
+            <table>
+                <tr>
+                    <td><label for="name">Full Name:</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="Enter full name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="text" id="email" name="email" placeholder="Enter email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" 
+                        minlength="8"
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%&!?])[A-Za-z\d@#$%&!?]{8,}"
+                        title="Password must be at least 8 characters long, with one uppercase, one lowercase, one number, and one special character."
+                        placeholder="Create password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm_password">Confirm Password:</label></td>
+                    <td><input type="password" id="confirm_password" name="confirm_password" minlength="8"
+                        placeholder="Confirm password" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit">
+                        <input type="button" value="Login" onclick="window.location.href='login.html';">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>

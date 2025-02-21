@@ -1,0 +1,68 @@
+body{
+  background-image: url(https://cdn.pixabay.com/photo/2015/06/25/16/54/train-821500_1280.jpg);
+  background-color: azure;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin:0px;
+  align-items:center;
+  height:100vh;
+  position:relative;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Transparent black overlay */
+  z-index: 1;
+}
+
+.navbar{
+  margin:0px;
+  z-index:2;
+  display:flex;
+  list-style: none;
+  justify-content: flex-end;
+  background-color:rgb(223, 212, 235);
+  padding:10px;
+  position:absolute;
+  width:100%;
+  height:50px;
+  top:0;
+  left:0;
+  right:0;
+  box-sizing: border-box;
+}
+.navbar li{
+ margin-left:30px;
+}
+
+.navbar ul{
+  margin-left:100%;
+  display:flex;
+} 
+.navbar a{
+  font-size: 20px;
+  color:tomato;
+  text-decoration: none;
+  font-weight:bolder;
+}
+h1{
+  z-index:2;
+  color:hotpink;
+}
+
+.navbar a:hover{
+  text-decoration: underline;
+  color:cadetblue;
+  font-size:22px;
+  cursor:pointer;
+}

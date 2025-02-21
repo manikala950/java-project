@@ -1,0 +1,77 @@
+body{
+  background-image: url(https://cdn.pixabay.com/photo/2020/01/06/10/16/train-4745050_1280.jpg);
+  background-color: rgba(172, 112, 27,);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  margin:0px;
+  position:relative;
+  display:flex;
+}
+
+body::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:rgba(174, 187, 199, 0.6);
+  z-index:1;
+}
+table{
+  width:100%;
+
+}
+
+.form-container{
+  z-index:2;
+  background-color: rgba(225, 214, 207, 0.7);
+  width:400px;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  border-radius:10px;
+  flex-direction: column;
+  padding:20px;
+
+}
+
+form{
+width:100%;
+padding:20px;
+
+}
+input[type="text"],input[type="password"]{
+  width:80%;
+  padding:10px;
+  font-size:16px;
+  border-radius: 5px;
+}
+
+label{
+  font-size:larger;
+}
+
+input[type="submit"]{
+  padding:10px;
+  margin-top:15px;
+  font-size: medium;
+  align-items: center;
+  cursor:pointer;
+  border-radius:5px;
+  margin-left:150px;
+}
+input[type="submit"]:hover{
+  background-color: rgb(219, 189, 171);
+}
+
+p{
+  margin-left: 100px;
+}
+p a:hover{
+  color:red;
+}

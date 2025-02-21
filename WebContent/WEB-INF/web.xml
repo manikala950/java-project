@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>LoginApp</display-name>
+  
+  <servlet>
+  <servlet-name>HomeSrv</servlet-name>
+  <servlet-class>com.train.www.HomeSrv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>HomeSrv</servlet-name>
+  <url-pattern>/test</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>RegisterSrv</servlet-name>
+  <servlet-class>com.train.www.RegisterSrv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>RegisterSrv</servlet-name>
+  <url-pattern>/test1</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Login</servlet-name>
+  <servlet-class>com.train.www.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Login</servlet-name>
+  <url-pattern>/test2</url-pattern>
+  
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>LoginSrv</servlet-name>
+  <servlet-class>com.train.www.LoginSrv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LoginSrv</servlet-name>
+  <url-pattern>/test3</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>SeatSrv</servlet-name>
+  <servlet-class>com.train.www.SeatSrv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SeatSrv</servlet-name>
+  <url-pattern>/test4</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>BookingSrv</servlet-name>
+  <servlet-class>com.train.www.BookingSrv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>BookingSrv</servlet-name>
+  <url-pattern>/test5</url-pattern>
+  
+  </servlet-mapping>
+  
+    
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+   
+    
+  </welcome-file-list>
+</web-app>
